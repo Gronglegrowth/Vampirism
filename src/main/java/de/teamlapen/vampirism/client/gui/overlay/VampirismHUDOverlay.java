@@ -60,6 +60,7 @@ public class VampirismHUDOverlay {
     protected static final ResourceLocation CROSSHAIR_ATTACK_INDICATOR_BACKGROUND_SPRITE = VResourceLocation.mc("hud/crosshair_attack_indicator_background");
     protected static final ResourceLocation CROSSHAIR_ATTACK_INDICATOR_PROGRESS_SPRITE = VResourceLocation.mc("hud/crosshair_attack_indicator_progress");
     public static final ResourceLocation FANG_SPRITE = VResourceLocation.mod("fang/fang");
+    public static final ResourceLocation FANG_SPRITE_CORRECTION = VResourceLocation.mod("fang/fang_corrections");
     public static final ResourceLocation PROGRESS_BACKGROUND_SPRITE = VResourceLocation.mod("fang/progress_background");
     public static final ResourceLocation PROGRESS_FOREGROUND_SPRITE = VResourceLocation.mod("fang/progress_foreground");
 
@@ -272,6 +273,7 @@ public class VampirismHUDOverlay {
         int percHeight = (int) (10 * perc);
         graphics.blitSprite(FANG_SPRITE, 16, 10, 0,10-percHeight, left, top + (10 - percHeight), 16, percHeight);
         RenderSystem.setShaderColor(1F, 1F, 1F, 1F);
+        graphics.blitSprite(FANG_SPRITE_CORRECTION, left, top, 16, 10);
         RenderSystem.disableBlend();
 
     }
