@@ -162,6 +162,16 @@ public class BloodBottleItem extends Item implements IFactionExclusiveItem, ModD
 
     @Override
     public boolean isBarVisible(@NotNull ItemStack stack) {
-        return false;
+        return BloodHelper.getBlood(stack) > 0;
+    }
+
+    @Override
+    public int getBarColor(ItemStack stack) {
+        return 0xED2846;
+    }
+
+    @Override
+    public int getBarWidth(ItemStack stack) {
+        return Math.round(13.0F * BloodHelper.getBlood(stack) / CAPACITY);
     }
 }
