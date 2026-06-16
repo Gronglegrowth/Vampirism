@@ -1,0 +1,35 @@
+{
+  "type": "vampirism:shaped_crafting_weapontable",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "tag": "c:gems/diamond"
+    },
+    "L": {
+      "tag": "c:leathers"
+    },
+    "P": {
+      "type": "neoforge:components",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "vampirism:very_strong_swiftness"
+        }
+      },
+      "items": "minecraft:potion"
+    }
+  },
+  "lava": 5,
+  "pattern": [
+    "LDDL",
+    "DPPD",
+    "D  D",
+    "L  L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vampirism:armor_of_swiftness_legs_ultimate"
+  },
+  "skill": [
+    "vampirism:enhanced_armor"
+  ]
+}

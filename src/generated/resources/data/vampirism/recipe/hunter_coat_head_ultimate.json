@@ -1,0 +1,24 @@
+{
+  "type": "vampirism:shaped_crafting_weapontable",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "tag": "c:gems/diamond"
+    },
+    "S": {
+      "item": "vampirism:purified_garlic"
+    }
+  },
+  "lava": 5,
+  "pattern": [
+    "DDDD",
+    "DSSD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vampirism:hunter_coat_head_ultimate"
+  },
+  "skill": [
+    "vampirism:enhanced_armor"
+  ]
+}

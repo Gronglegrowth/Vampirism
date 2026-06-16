@@ -34,7 +34,7 @@ import java.util.UUID;
 public class BatVampireAction extends DefaultVampireAction implements ILastingAction<IVampirePlayer> {
 
     public final static float BAT_EYE_HEIGHT = 0.85F * 0.6f;
-    public static final EntityDimensions BAT_SIZE = EntityDimensions.fixed(0.8f, 0.6f).withEyeHeight(BAT_EYE_HEIGHT);
+    public static final EntityDimensions BAT_SIZE = EntityDimensions.fixed(0.6f, 0.6f).withEyeHeight(BAT_EYE_HEIGHT);
 
     private static final float PLAYER_WIDTH = 0.6F;
     private static final float PLAYER_HEIGHT = 1.8F;
@@ -94,7 +94,7 @@ public class BatVampireAction extends DefaultVampireAction implements ILastingAc
         Player player = vampire.asEntity();
         setModifier(player, false);
         if (!player.onGround()) {
-            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 100, false, false));
+            player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 5, false, false));
         }
         //player.addPotionEffect(new PotionEffect(MobEffects.REGENERATION, 20, 0, false, false));
         updatePlayer((VampirePlayer) vampire, false);
